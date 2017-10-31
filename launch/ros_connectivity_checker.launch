@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<launch>
+    <node pkg="radio_ros_connectivity_checker" type="ros_connectivity_checker.py" respawn="false" name="radio_ros_connectivity_checker" output="screen">
+        <rosparam file="$(find radio_ros_connectivity_checker)/config/parameters.yaml" command="load" />
+    </node>
+</launch>
